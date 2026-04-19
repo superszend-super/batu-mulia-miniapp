@@ -1,0 +1,33 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#1a1a2e; color:#fff; min-height:100vh; }
+.screen { display:none; padding:16px 16px 80px; }
+.screen.active { display:block; }
+.header { display:flex; justify-content:space-between; align-items:center; padding:12px 0; margin-bottom:16px; }
+.resources { display:flex; gap:16px; }
+.balance,.batu-mentah { background:rgba(255,255,255,0.1); padding:8px 12px; border-radius:20px; font-weight:bold; }
+.slot-grid { display:flex; justify-content:space-around; gap:8px; margin:20px 0; }
+.slot-card { flex:1; aspect-ratio:1; background:rgba(255,255,255,0.1); border-radius:12px; display:flex; flex-direction:column; align-items:center; justify-content:center; cursor:pointer; border:2px solid transparent; }
+.slot-card.idle { border-color:#4CAF50; background:rgba(76,175,80,0.2); }
+.slot-card.cooldown { border-color:#FF9800; background:rgba(255,152,0,0.2); }
+.slot-card.empty { border-color:#666; opacity:0.6; }
+.slot-icon { font-size:32px; }
+.slot-durability { font-size:12px; margin-top:4px; }
+.slot-status { font-size:10px; margin-top:2px; }
+.action-panel { background:rgba(255,255,255,0.05); border-radius:12px; padding:16px; margin:20px 0; text-align:center; }
+.progress-bar { width:100%; height:8px; background:rgba(255,255,255,0.2); border-radius:4px; margin:10px 0; overflow:hidden; }
+.progress-fill { height:100%; background:#4CAF50; border-radius:4px; }
+.bottom-nav { position:fixed; bottom:0; left:0; right:0; display:flex; background:#1a1a2e; border-top:1px solid rgba(255,255,255,0.1); padding:8px; }
+.nav-btn { flex:1; background:none; border:none; color:#fff; padding:12px; font-size:14px; cursor:pointer; opacity:0.7; border-radius:8px; }
+.nav-btn.active { opacity:1; background:#2d6a4f; }
+.back-btn { background:none; border:none; color:#fff; font-size:20px; cursor:pointer; padding:8px; }
+.toko-item { display:flex; align-items:center; gap:12px; padding:16px; background:rgba(255,255,255,0.05); border-radius:12px; margin-bottom:12px; }
+.toko-item button { background:#2d6a4f; color:#fff; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; }
+.inventory-item { display:flex; align-items:center; gap:12px; padding:12px; background:rgba(255,255,255,0.05); border-radius:8px; margin-bottom:8px; }
+.spinner { width:40px; height:40px; border:4px solid rgba(255,255,255,0.2); border-top-color:#fff; border-radius:50%; animation:spin 1s linear infinite; margin:20px auto; }
+@keyframes spin { to { transform:rotate(360deg); } }
+#loading { text-align:center; padding-top:100px; }
+.pasar-tabs { display:flex; margin-bottom:16px; }
+.pasar-tab { flex:1; padding:12px; background:none; border:none; color:#fff; cursor:pointer; opacity:0.7; border-bottom:2px solid transparent; }
+.pasar-tab.active { opacity:1; border-bottom-color:#2d6a4f; }
+.pasar-item { display:flex; align-items:center; gap:12px; padding:12px; background:rgba(255,255,255,0.05); border-radius:8px; margin-bottom:8px; }
+.pasar-item button { background:#2d6a4f; color:#fff; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; margin-left:auto; }
