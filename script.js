@@ -1,7 +1,7 @@
 const tg = window.Telegram.WebApp;
 tg.expand(); tg.ready();
 const SUPABASE_URL = 'https://qfinqcjjajivyjhwysbau.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFmaW5xY2pqYWl2eWpod3lzYmF1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY1MzAyMjcsImV4cCI6MjA5MjEwNjIyN30.BwxcBSUrE6Q5BQ3RkRqUCCysI_f5vJVo28gDSx8t0PY';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFmaW5xY2pqYWl2eWpod3lzYmF1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY1MzAyMjcsImV4cCI6MjA5MjEwNjIyN30.K5kPE0_ckX32lhWJY3-7bwX18-bBgxlbxTq_R_CaTPo';
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 let currentUser=null, playerData=null, mejaSlots=[], cooldownInterval=null;
 
